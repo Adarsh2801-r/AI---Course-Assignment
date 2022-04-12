@@ -1,6 +1,6 @@
 ## Problem 3 : Modelling-Bayesian-Network
 
-## Theoretical Minimum
+## Theory
 
 A Bayesian Network is made up of 
 1. A directed acyclic graph
