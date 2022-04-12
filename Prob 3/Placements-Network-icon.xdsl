@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in trial version of GeNIe, which can be used for evaluation purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Assignments">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.6 0.4</probabilities>
+		</cpt>
+		<cpt id="Exams">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="Grades">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Assignments Exams</parents>
+			<probabilities>0.3 0.7 0.1 0.9 0.4 0.6 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Placements">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Grades</parents>
+			<probabilities>0.4 0.6 0.2 0.8</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 3.0.6518.2 EVALUATION" name="Network1">
+			<node id="Assignments">
+				<name>Assignments</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>473 219 548 265</position>
+			</node>
+			<node id="Exams">
+				<name>Exams</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>668 224 740 263</position>
+			</node>
+			<node id="Grades">
+				<name>Grades</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>570 336 636 376</position>
+			</node>
+			<node id="Placements">
+				<name>Placements</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>570 453 638 495</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
