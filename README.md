@@ -1,4 +1,6 @@
-# Modelling-Bayesian-Network
+# AI (CS F407) Assignments
+
+## Problem 3 : Modelling-Bayesian-Network
 
 ## Theoretical Minimum
 
