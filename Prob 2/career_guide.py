@@ -86,6 +86,30 @@ class Greetings(KnowledgeEngine):
 	def career_0(self):
 		self.declare(Fact(career = "IT"))
 
+	@Rule(
+		Fact(action="find_career"),
+		Fact(cgpa="medium"),
+		Fact(pub="n"),
+		Fact(crux="n"),
+		Fact(acm="n"),
+		Fact(ieee="n"),
+		Fact(por="y")
+	)
+	def career_1(self):
+		self.declare(Fact(career = "Management"))
+
+	@Rule(
+		Fact(action="find_career"),
+		Fact(cgpa="high"),
+		Fact(pub="y"),
+		Fact(crux="n"),
+		Fact(acm="y"),
+		Fact(ieee="y"),
+		Fact(por="n")
+	)
+	def career_2(self):
+		self.declare(Fact(career = "Research"))
+
 	@Rule(Fact(action="find_career"),Fact(career = MATCH.career),salience = -998)
 	def career(self,career):
 		print("")
